@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Find and send SIGKILL (signal 9) to the 7-highlander process
-pid=$(pgrep -f "7-highlander")
-[ -n "$pid" ] && kill -9 "$pid"
+# Find every running 7-highlander PID and send each a SIGKILL (9)
+while read -r pid; do
+  kill -9 "$pid"
+done < <(pgrep -f "7-highlander")
