@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
+# Loop forever printing “To infinity and beyond” and trap SIGTERM to print invincibility message
 trap 'echo "I am invincible!!!"' SIGTERM
+
 while true; do
   echo "To infinity and beyond"
   sleep 2
