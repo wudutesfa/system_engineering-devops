@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Loop forever printing “To infinity and beyond” and trap SIGTERM to display OK
-trap 'echo OK' SIGTERM
+# Loop forever printing “To infinity and beyond” and trap SIGTERM to say I am invincible!!!
+trap 'echo OK; echo "I am invincible!!!" >&2' SIGTERM
 
 while true; do
   echo "To infinity and beyond"
