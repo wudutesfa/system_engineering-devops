@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Loop forever printing “To infinity and beyond” and trap SIGTERM to loudly declare invincibility
+# Loop forever printing “To infinity and beyond” and trap SIGTERM to display OK
 trap 'echo OK' SIGTERM
 
 while true; do
